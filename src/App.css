@@ -161,12 +161,21 @@ header nav ul li a {
     width: 100%;
   }
   .bannner_content h1{
-    width: 379px;
+    width: 100%;
+    font-size: 2rem;
   }
   .bannner_content p{
-    width: 326px;
+    width: 100%;
   }
- 
+  .post{
+    justify-content: center;
+  }
+  .editor_post{
+    margin: 0px !important;
+  }
+  .editors_posts{
+   margin-bottom: 20px;
+  }
 }
 
 /* posts */
@@ -446,4 +455,66 @@ header nav ul li a {
 }
 .allblog{
   margin-bottom: 50px;
+}
+
+
+/* media Query */
+
+@media (max-width:905px){
+    .banner{
+      padding-left: 30px;
+    }
+    header{
+      padding: 20px 30px;
+    }
+    .posts{
+      padding: 20px 30px;
+
+    }
+    .post {
+      width: 401px;
+      margin-bottom: 20px;
+    }
+    .latestpost_content {
+      padding: 0px 30px;
+  }
+  .editors h2{
+    padding: 0px 30px;
+  }
+  .editors_posts{
+    padding: 0px 30px;
+    gap: 20px;
+
+  }
+}
+
+
+@media (max-width:768px){
+  .editors_posts{
+    flex-wrap: wrap;
+  }
+  .post{
+    width: 358px;
+  }
+  .Bigpost_content{
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .Bigpost_content h1{
+    font-size: 2rem;
+  }
+  .single_banner_content{
+    width: 100%;
+  }
+  .single_banner_content h1{
+    font-size: 1.5rem;
+  }
+  .single_banner_fullcontent{
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .single_banner_meta h1{
+      font-size: 2rem;
+      line-height: 1;
+  }
 }
